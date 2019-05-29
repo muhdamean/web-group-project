@@ -1,0 +1,237 @@
+body{
+  font: Arial, helvetica, sans-serif;
+  background: #f1f1f1;
+  padding: 0;
+  margin: 0;
+
+}
+/**** <globals> ****/
+.container{
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+}
+.current{
+  background:seagreen;
+  font-weight: bold;
+}
+.button{
+  padding: 13px;
+  border:none;
+  color:#fff;
+  background:mediumseagreen;
+  font-weight: bold;
+}
+.highlight{
+  font-weight: bold;
+}
+/**** </globals> ****/
+
+/**** <header> ****/
+header{
+  height: 50px;
+  padding-top: 13px;
+  background: mediumseagreen;
+  color:ivory;
+  max-height: 50px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid ivory;
+}
+header ul{
+  padding: 0;
+  margin: 0;
+  float:right;
+}
+header li{
+  list-style: none;
+  display: inline-block;
+}
+#branding{
+  float:left;
+}
+header h1{
+  padding: 0;
+  margin:0;
+}
+header a{
+  text-decoration: none;
+  color: ivory;
+  font-size: 1.2rem;
+  display: block;
+  padding:10px;
+  transition: all 1s ease-in-out;
+}
+header a:hover{
+  background:seagreen;
+  font-weight: bold;
+}
+/**** </header> ****/
+
+/**** <dropdown> ****/
+.drop-content{
+  display: none;
+  position: absolute;
+  background-color: mediumseagreen;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.drop-content a{
+  color: ivory;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: bock;
+}
+.drop-content a:hover{
+  background: seagreen;
+  color: ivory;
+  font-weight: bold;
+}
+.dropdown:hover .drop-content{
+  display: block;
+}
+/**** </dropdown> ****/
+
+/***** <slider> *****/
+.slider{
+  width:100%;
+  background:url("../images/slide.jpg") no-repeat 0 -500px;
+  height:350px;
+  color: ivory;
+  text-align: center;
+  padding-top: 50px;
+  border-bottom: 3px solid ivory;
+  z-index: -12;
+}
+.slider h1{
+  font-size:50px;
+}
+.slider p{
+  font-size: 20px;
+}
+/***** </slider> *****/
+
+/**** <newsletter> ****/
+#newsletter{
+  padding: 15px;
+  color:seagreen;
+  background: palegreen;
+  overflow: hidden;
+}
+#newsletter h1{
+  float: left;
+  font-size:40px;
+}
+#newsletter form{
+  float: right;
+  margin-top: 20px;
+}
+#newsletter form input[type="email"]{
+  padding: 15px;
+  width:250px;
+  background: ivory;
+  border:none;
+  color:gray;
+}
+#newsletter form input[type="email"]:hover{
+  background: ivory;
+  color:gray;
+  transition: all 1s ease-in-out;
+}
+/**** </newsletter> ****/
+
+/**** <body> ****/
+#body{
+  padding-top:30px;
+}
+#body .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding: 10px;
+}
+#body  span.fas{
+  color: seagreen;
+}
+/**** </body> ****/
+
+/**** <site map> ****/
+#site-map{
+  overflow: hidden;
+  background: palegreen;
+  color:seagreen;
+  padding: 20px;
+}
+#site-map .site-map-box{
+  float:left;
+  width:20%;
+  padding:10px;
+}
+#site-map li{
+  list-style: none;
+  padding: 0;
+}
+#site-map a{
+  text-decoration: none;
+  color: seagreen;
+  padding: 10px;
+  display: block;
+}
+#site-map a:hover{
+  font-weight: bold;
+}
+/**** </site map> ****/
+
+/**** <footer> ****/
+footer{
+  text-align: center;
+  background: seagreen;
+  color: ivory;
+  padding: 20px;
+}
+footer p{
+  margin:0;
+}
+/**** </footer> ****/
+@media (max-width:768px) {
+  header #branding,
+  header ul,
+  header ul li,
+  #newsletter h1,
+  #newsletter form,
+  #body .box,
+  #site-map .site-map-box{
+    float: none;
+    text-align: center;
+    width:100%;
+  }
+  header ul li{
+    display: inline;
+  }
+  header a{
+    display: inline;
+  }
+  header{
+    padding-bottom: 20px;
+    height: auto;
+    overflow: hidden;
+  }
+  header .current,
+  header a:hover,
+  .drop-content a:hover{
+    background: transparent;
+  }
+  #newsletter input{
+    width:100%;
+    margin-bottom: 10px;
+  }
+  #newsletter button{
+    width:100%;
+    display: block;
+  }
+  .slider{
+    padding-top:10px;
+  }
+  footer{
+    padding:20px;
+  }
+}
