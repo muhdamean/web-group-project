@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NASS | Departments</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/regular.css">
+
+    <style type="text/CSS">
+       .row{
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 100px;
+           }
+           .sidebar{
+               width: 200px;
+               height: 10px;
+           }
+           .main-content{
+               margin-left: 250px;
+           }
+           ul.tabs>li{
+               height: auto;
+               width: 100%;
+               margin-top: 3px;
+               background-color: mediumseagreen;
+               text-align: center;
+               padding: 10px;
+
+           }
+           ul.tabs li {
+               list-style-type: none;
+               padding-top: 10px ;
+           }
+           .tabs a{
+               text-decoration: none;
+               color: ivory;
+           }
+           .tabs li:hover{
+               background-color:seagreen;
+           }
+           .tabs li .active{
+               background-color:seagreen;
+           }
+           .scroller {
+ width: 80%;
+ height: 400px;
+ overflow-y: scroll;
+ scrollbar-width: thin;
+}
+h2{
+   color:green;
+}
+       </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>NASS<span style="color: seagreen">IBBUL</span></h1>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="departments.html" class="current">Departments</a></li>
+          <li class="dropdown"><a href="#">More</a>
+            <div class="drop-content">
+              <a href="departments.html">Departments</a>
+              <a href="team.html">The Team</a>
+              <a href="faq.html">FAQ</a>
+              <a href="login.html">Login</a>
+            </div>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section>
+      <div  id="content">
+      <div class="container">
+        <h1>Departments</h1>
+        <script>
+        function rudrSwitchTab(rudr_tab_id, rudr_tab_content) {
+            // first of all we get all tab content blocks (I think the best way to get them by class names)
+            var x = document.getElementsByClassName("tabcontent");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = 'none'; // hide all tab content
+            }
+            document.getElementById(rudr_tab_content).style.display = 'block'; // display the content of the tab we need
+
+            // now we get all tab menu items by class names (use the next code only if you need to highlight current tab)
+            var x = document.getElementsByClassName("tabmenu");
+            var i;
+            for (i = 0; i < x.length; i++) {
+                x[i].className = 'tabmenu';
+            }
+            document.getElementById(rudr_tab_id).className = 'tabmenu active';
+
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="sidebar">
+                <ul class="tabs">
+
+                    <li><a data-toggle="tab" href="javascript:rudrSwitchTab('tb_1', 'content_1');" id="tb_1"
+                            class="tabmenu active">Biology</a></li>
+                    <li><a data-toggle="tab" href="javascript:rudrSwitchTab('tb_2', 'content_2');" id="tb_2"
+                            class="tabmenu">BioChemistry</a></li>
+                    <li><a data-toggle="tab" href="javascript:rudrSwitchTab('tb_3', 'content_3');" id="tb_3"
+                            class="tabmenu">Computer Science</a>
+                    </li>
+                    <li><a data-toggle="tab" href="javascript:rudrSwitchTab('tb_4', 'content_4');" id="tb_4"
+                            class="tabmenu">Chemistry</a>
+                    </li>
+                    <li><a data-toggle="tab" href="javascript:rudrSwitchTab('tb_5', 'content_5');" id="tb_5"
+                            class="tabmenu">Geography</a>
+                    </li>
+                    <li><a data-toggle="tab" href="javascript:rudrSwitchTab('tb_6', 'content_6');" id="tb_6"
+                            class="tabmenu ">Mathematics</a></li>
+                    <li><a data-toggle="tab" href="javascript:rudrSwitchTab('tb_7', 'content_7');" id="tb_7"
+                            class="tabmenu">Microbiology</a></li>
+                    <li><a data-toggle="tab" href="javascript:rudrSwitchTab('tb_8', 'content_8');" id="tb_8"
+                            class="tabmenu">Physics</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-content scroller">
+                <div id="content_1" class="tabcontent">
+                    <h2>DEPARTMENT OF BIOLOGY</h2>
+
+                    <p><strong>INTRODUCTION</strong><br>
+                        The Department of Biology runs a four year programme leading to the award of Bachelor of
+                        Science in biology. The first year and substantial part of the second year of the
+                        programme is spent in taking basic science courses to provide a broad and sound knowledge of
+                        basic scientific information and its application to societal needs. In the subsequent two
+                        years the student are trained to apply the initial scientific knowledge, with increasing
+                        complexity to biochemical processes.
+                    </p>
+                    <p>
+                        <strong>MISSION STATEMENT</strong><br>
+                        The Department of Biochemistry will provide an enabling environment that promotes the
+                        training of biology that are versatile and equipped with necessary entrepreneurial
+                        skills to be catalyst in the positive transformation of the nations fortune in such areas of
+                        biotechnology, applied research and raw product development.
+                    </p>
+                    <p>
+                        <strong>PHILOSOPHY</strong><br>
+                        Biology being a most vital life science for elucidation of existence, well articulated
+                        for the development of inquisitive, imaginative minds that would use their acquired skills
+                        for the development and general enrichment of quality of life for Nigerians and all man
+                        kind.
+                    </p>
+                    <p> <strong>VISION</strong><br>
+                        IBB University's Department of biology strives to become a centre of excellence,
+                        nationally and internationally acclaimed for her innovative pedagogue and applied research
+                        majorly in the areas of Agriculture, Biotechnology, Medicine, Industry and pharmaceutical
+                        Science
+                    </p>
+                    <p>
+                        <strong>ENTRY REQUIREMENTS</strong><br>
+                        Entry requirements into biology programme:
+                        In addition to the general requirements for admission into the University candidates
+                        intending to read the B.Sc., degree in biology must have fulfilled the condition set
+                        out below
+                        <ul>
+                            <li style="list-style-type: disc;">Entry into 100 level; A candidate must either:</li>
+                            <p>Have five credits in the relevant subjects (including Chemistry, physics, Biology,
+                                and Mathematics ) in SSCE/West African School Certificate Examination or equivalent.
+                                Have successfully completed the Remedial courses of the Ibrahim Badamasi Babangida
+                                University, Lapai in chemistry and in any two of the following three subjects:
+                                Biology, Physics and Mathematics provided the candidate has credit in the third
+                                subject in school certificate Examination or equivalent.</p>
+                            <li style="list-style-type: disc;">Direct Entry into 200 level;</li>
+                            <p>This is for candidates with appropriate G.C.E 'A' level passes or equivalent who are
+                                deemed qualified to enter the university at the Year II level of the four-year
+                                Degree Programme. Such candidates must have possessed the G.C.E 'A' Level, HSC. IJMB
+                                or equivalent in two relevant Science subjects including Chemistry and at least GCE
+                                'O' Level or equivalent at credit level in Biology, Mathematics and Physics.</p>
+                        </ul>
+
+                    </p>
+
+                    </p>
+                </div>
+                <div id="content_2" class="tabcontent" style="display:none;">
+                    <h2>DEPARTMENT OF BIO-CHEMISTRY</h2>
+
+
+                    <p><strong>INTRODUCTION</strong><br>
+                        The Department of Biochemistry runs a four year programme leading to the award of Bachelor of
+                        Science in Biochemistry. The first year and substantial part of the second year of the
+                        programme is spent in taking basic science courses to provide a broad and sound knowledge of
+                        basic scientific information and its application to societal needs. In the subsequent two
+                        years the student are trained to apply the initial scientific knowledge, with increasing
+                        complexity to biochemical processes.
+                    </p>
+                    <p>
+                        <strong>MISSION STATEMENT</strong><br>
+                        The Department of Biochemistry will provide an enabling environment that promotes the
+                        training of biochemists that are versatile and equipped with necessary entrepreneurial
+                        skills to be catalyst in the positive transformation of the nations fortune in such areas of
+                        biotechnology, applied research and raw product development.
+                    </p>
+                    <p>
+                        <strong>PHILOSOPHY</strong><br>
+                        Biochemistry being a most vital life science for elucidation of existence, well articulated
+                        for the development of inquisitive, imaginative minds that would use their acquired skills
+                        for the development and general enrichment of quality of life for Nigerians and all man
+                        kind.
+                    </p>
+                    <p> <strong>VISION</strong><br>
+                        IBB University's Department of Biochemistry strives to become a centre of excellence,
+                        nationally and internationally acclaimed for her innovative pedagogue and applied research
+                        majorly in the areas of Agriculture, Biotechnology, Medicine, Industry and pharmaceutical
+                        Science
+                    </p>
+                    <p>
+                        <strong>ENTRY REQUIREMENTS</strong><br>
+                        Entry requirements into Biochemistry programme:
+                        In addition to the general requirements for admission into the University candidates
+                        intending to read the B.Sc., degree in Biochemistry must have fulfilled the condition set
+                        out below
+                        <ul>
+                            <li style="list-style-type: disc;">Entry into 100 level; A candidate must either:</li>
+                            <p>Have five credits in the relevant subjects (including Chemistry, physics, Biology,
+                                and Mathematics ) in SSCE/West African School Certificate Examination or equivalent.
+                                Have successfully completed the Remedial courses of the Ibrahim Badamasi Babangida
+                                University, Lapai in chemistry and in any two of the following three subjects:
+                                Biology, Physics and Mathematics provided the candidate has credit in the third
+                                subject in school certificate Examination or equivalent.</p>
+                            <li style="list-style-type: disc;">Direct Entry into 200 level;</li>
+                            <p>This is for candidates with appropriate G.C.E 'A' level passes or equivalent who are
+                                deemed qualified to enter the university at the Year II level of the four-year
+                                Degree Programme. Such candidates must have possessed the G.C.E 'A' Level, HSC. IJMB
+                                or equivalent in two relevant Science subjects including Chemistry and at least GCE
+                                'O' Level or equivalent at credit level in Biology, Mathematics and Physics.</p>
+                        </ul>
+
+                    </p>
+
+                    </p>
+                </div>
+                <div id="content_3" class="tabcontent" style="display:none;">
+                    <h2>DEPARTMENT OF COMPUTER SCIENCE</h2>
+                    <p>
+                        <strong>PHILOSOPHY, AIMS AND OBJECTIVES</strong><br>
+                        The purpose, aims and objectives of bachelors Degree program in Computer science include the
+                        following:<br>
+                        <ol>
+                            <li>To create in students the awareness and enthusiasm for computer science and its
+                                capabilities.</li>
+                            <li>To involve the students in intellectually stimulating and satisfying experience of
+                                learning and studying.</li>
+                            <li>To provide a broad and balance foundation in computer science knowledge and practical
+                                skills.</li>
+                            <li>To develop students through education in computer science as a range of transferable
+                                applicable skills of ICT to all aspects of human endeavours.</li>
+                            <li> To generate in students an appreciation of the importance of computer in an industrial,
+                                economic technological and social contexts.</li>
+                            <li> To improve students with knowledge and skills necessary for further studies in computer
+                                science or multi-disciplinary studies involving computer science.</li>
+                        </ol>
+                    </P>
+                    <p><strong>ENTRY REQUIREMENT</strong><br>
+
+                        In addition to the general requirements for admission into the University, candidates intending
+                        to study B.Sc. Computer Science must have fulfilled one of the conditions below;
+                    </p>
+                    <p>
+                        <strong>UTME ENTRY REQUIREMENT</strong><br>
+
+                        A Candidate must have at least five (5) credits pass at O’Level, which must include English,
+                        Mathematics Physics, Chemistry and Biology/Agric.
+                        A Candidate must have successfully completed Remedial course at IBB University in English,
+                        Mathematics, Physics, Chemistry and Biology. In addition, candidates must satisfy JAMB
+                        requirements.
+                    </p>
+                    <p> <strong>DIRECT ENTRY REQUIREMENT (200 LEVEL)</strong><br>
+
+                        Candidate with appropriate ‘A’ Level, HSC, IJMB pass in minimum of two relevant subjects may be
+                        admitted into the programme. Holders of OND, HND and NCE will also be considered. The 0’ level
+                        must include credit pass in English, Mathematics, Physics and any two of Chemistry,
+                        Biology/Agric science, Geography and Economics.
+                    </p>
+
+
+                </div>
+                <div id="content_4" class="tabcontent" style="display:none;">
+                    <h2>DEPARTMENT OF CHEMISTRY</h2>
+
+
+                    <p><strong>INTRODUCTION</strong><br>
+                        The Department of Chemistry runs a four year programme leading to the award of Bachelor of
+                        Science in Chemistry. The first year and substantial part of the second year of the
+                        programme is spent in taking basic science courses to provide a broad and sound knowledge of
+                        basic scientific information and its application to societal needs. In the subsequent two
+                        years the student are trained to apply the initial scientific knowledge, with increasing
+                        complexity to chemical processes.
+                    </p>
+                    <p>
+                        <strong>MISSION STATEMENT</strong><br>
+                        The Department of Chemistry will provide an enabling environment that promotes the
+                        training of chemists that are versatile and equipped with necessary entrepreneurial
+                        skills to be catalyst in the positive transformation of the nations fortune in such area of
+                        applied research and raw product development.
+                    </p>
+                    <p>
+                        <strong>PHILOSOPHY</strong><br>
+                        Chemistry being a most vital life science for elucidation of existence, well articulated
+                        for the development of inquisitive, imaginative minds that would use their acquired skills
+                        for the development and general enrichment of quality of life for Nigerians and all man
+                        kind.
+                    </p>
+                    <p> <strong>VISION</strong><br>
+                        IBB University's Department of Chemistry strives to become a centre of excellence,
+                        nationally and internationally acclaimed for her innovative pedagogue and applied research
+                        majorly in the areas of Agriculture, Biotechnology, Medicine, Industry and pharmaceutical
+                        Science
+                    </p>
+                    <p>
+                        <strong>ENTRY REQUIREMENTS</strong><br>
+                        Entry requirements into Biochemistry programme:
+                        In addition to the general requirements for admission into the University candidates
+                        intending to read the B.Sc., degree in Biochemistry must have fulfilled the condition set
+                        out below
+                        <ul>
+                            <li style="list-style-type: disc;">Entry into 100 level; A candidate must either:</li>
+                            <p>Have five credits in the relevant subjects (including Chemistry, physics, Biology,
+                                and Mathematics ) in SSCE/West African School Certificate Examination or equivalent.
+                                Have successfully completed the Remedial courses of the Ibrahim Badamasi Babangida
+                                University, Lapai in chemistry and in any two of the following three subjects:
+                                Biology, Physics and Mathematics provided the candidate has credit in the third
+                                subject in school certificate Examination or equivalent.</p>
+                            <li style="list-style-type: disc;">Direct Entry into 200 level;</li>
+                            <p>This is for candidates with appropriate G.C.E 'A' level passes or equivalent who are
+                                deemed qualified to enter the university at the Year II level of the four-year
+                                Degree Programme. Such candidates must have possessed the G.C.E 'A' Level, HSC. IJMB
+                                or equivalent in two relevant Science subjects including Chemistry and at least GCE
+                                'O' Level or equivalent at credit level in Biology, Mathematics and Physics.</p>
+                        </ul>
+
+                    </p>
+
+                    </p>
+                </div>
+                <div id="content_5" class="tabcontent" style="display:none;">
+                    <h2>DEPARTMENT OF GEOGRAPHY</h2>
+                    <p><strong>INTRODUCTION</strong><br>
+                        The programme of Geography at the Ibrahim Badamasi Babangida University is aimed and geared
+                        towards scientific geography and the application of scientific methods, techniques and knowledge
+                        of geography towards tackling environmental, planning and developmental problems in Nigeria. It
+                        is also aimed at maximizing benefits and minimizing cost and damages to human behaviour in
+                        relation to the prevailing environment. This is achieved by attempting to research, describe,
+                        explain, predict and where possible control human behaviour and/or the physical, social and
+                        cultural environments. The programme is designed to help students understand the problem of
+                        their social and physical environment and also to develop a critical judgment which will enable
+                        them to be creative and self-reliant and make rational objective choices in contributing to
+                        issues relating to their communities.</p>
+                    <p>
+                        <strong>STRUCTURE OF THE PROGRAMME</strong><br>
+                        The B.Sc. programme lasts for 4 years for UME candidates who start at the 00Level and 3 years
+                        for Direct Entry candidates who join at the 200 Level. All students of the Department are
+                        expected to register for a minimum of 15 credit units and maximum of 24 credit units per
+                        semester except in the 1st semester of the 300 and 400 Levels when the maximum may be exceeded
+                        by additional 6 credit units because of the SIWES programme slated for 2nd Semester of the 300
+                        Level. Students are encouraged to carry out their final year projects in any of the diversified
+                        subject areas covering climatology and meteorology, hydrology and water resources management,
+                        geomorphology and soil studies, geographic information system (GIS), surveying, remote sensing,
+                        economic geography, transportation geography, population studies, urban planning and rural
+                        development.
+                        <br>
+                        <strong>Admission Requirements</strong><br>
+                        Candidates for admission into the B.Sc degree programme in Geography must satisfy the University
+                        minimum entry requirements, which stipulate 5 credits in the GCE-Q Level, NECQ or WAEC (in not
+                        more than 2 sittings) . and these must include Geography and any other two science subjects, in
+                        addition to credit passes in Mathematics and English Language.<br>
+                        In addition to the above requirements, candidates seeking admission into the 100 Level must sit
+                        and pass the University Matriculation Examination (UME) administered by the Joint Admission and
+                        Matriculation Board (JAMB).<br>
+                        Candidates for the Direct Entry admission must have obtained minimum of Credit passes at the
+                        National Diploma in a subject related to Geography or must have obtained GCE-A Level or IJMB
+                        passes of which two of the passes must include Geography and one other science subject, in
+                        addition to Q-Level credit passes in Mathematics and English Language.<br>
+                        Students in the Preliminary Studies Programme of the Ibrahim Badamasi Babangida University, who
+                        satisfactorily pass the end of session examinations in that programme, may be considered for
+                        admission into the four-year degree programme.
+                    </p>
+
+
+                </div>
+                <div id="content_6" class="tabcontent" style="display:none;">
+                    <h2>DEPARTMENT OF MATHEMATICS</h2>
+                    <p>
+                        <strong>PHILOSOPHY, AIMS AND OBJECTIVES</strong><br>
+                        The purpose, aims and objectives of bachelors Degree program in mathematics include the
+                        following:<br>
+                        <ol>
+                            <li>To create in students the awareness and enthusiasm for computer science and its
+                                capabilities.</li>
+                            <li>To involve the students in intellectually stimulating and satisfying experience of
+                                learning and studying.</li>
+                            <li>To provide a broad and balance foundation in computer science knowledge and practical
+                                skills.</li>
+                            <li>To develop students through education in computer science as a range of transferable
+                                applicable skills of ICT to all aspects of human endeavours.</li>
+                            <li> To generate in students an appreciation of the importance of mathematics in an
+                                industrial, economic technological and social contexts.</li>
+                            <li> To improve students with knowledge and skills necessary for further studies in computer
+                                science or multi-disciplinary studies involving computer science.</li>
+                        </ol>
+
+                    </P>
+                    <p><strong>ENTRY REQUIREMENT</strong><br>
+
+                        In addition to the general requirements for admission into the University, candidates intending
+                        to study B.Sc. Computer Science must have fulfilled one of the conditions below;
+                    </p>
+                    <p>
+                        <strong>UTME ENTRY REQUIREMENT</strong><br>
+
+                        A Candidate must have at least five (5) credits pass at O’Level, which must include English,
+                        Mathematics Physics, Chemistry and Biology/Agric.
+                        A Candidate must have successfully completed Remedial course at IBB University in English,
+                        Mathematics, Physics, Chemistry and Biology. In addition, candidates must satisfy JAMB
+                        requirements.
+                    </p>
+                    <p> <strong>DIRECT ENTRY REQUIREMENT (200 LEVEL)</strong><br>
+
+                        Candidate with appropriate ‘A’ Level, HSC, IJMB pass in minimum of two relevant subjects may be
+                        admitted into the programme. Holders of OND, HND and NCE will also be considered. The 0’ level
+                        must include credit pass in English, Mathematics, Physics and any two of Chemistry,
+                        Biology/Agric science, Geography and Economics.
+                    </p>
+                </div>
+                <div id="content_7" class="tabcontent" style="display:none;">
+                    <h2>DEPARTMENT OF MICROBIOLOGY</h2>
+
+                    <p><strong>INTRODUCTION</strong><br>
+                        The Department of microbiology runs a four year programme leading to the award of Bachelor of
+                        Science in microbiology. The first year and substantial part of the second year of the
+                        programme is spent in taking basic science courses to provide a broad and sound knowledge of
+                        basic scientific information and its application to societal needs. In the subsequent two
+                        years the student are trained to apply the initial scientific knowledge, with increasing
+                        complexity to biochemical processes.
+                    </p>
+                    <p>
+                        <strong>MISSION STATEMENT</strong><br>
+                        The Department of microbiology will provide an enabling environment that promotes the
+                        training of microbiology that are versatile and equipped with necessary entrepreneurial
+                        skills to be catalyst in the positive transformation of the nations fortune in such areas of
+                        biotechnology, applied research and raw product development.
+                    </p>
+                    <p>
+                        <strong>PHILOSOPHY</strong><br>
+                        microbiology being a most vital life science for elucidation of existence, well articulated
+                        for the development of inquisitive, imaginative minds that would use their acquired skills
+                        for the development and general enrichment of quality of life for Nigerians and all man
+                        kind.
+                    </p>
+                    <p> <strong>VISION</strong><br>
+                        IBB University's Department of microbiology strives to become a centre of excellence,
+                        nationally and internationally acclaimed for her innovative pedagogue and applied research
+                        majorly in the areas of Agriculture, Biotechnology, Medicine, Industry and pharmaceutical
+                        Science
+                    </p>
+                    <p>
+                        <strong>ENTRY REQUIREMENTS</strong><br>
+                        Entry requirements into microbiology programme:
+                        In addition to the general requirements for admission into the University candidates
+                        intending to read the B.Sc., degree in biology must have fulfilled the condition set
+                        out below
+                        <ul>
+                            <li style="list-style-type: disc;">Entry into 100 level; A candidate must either:</li>
+                            <p>Have five credits in the relevant subjects (including Chemistry, physics, Biology,
+                                and Mathematics ) in SSCE/West African School Certificate Examination or equivalent.
+                                Have successfully completed the Remedial courses of the Ibrahim Badamasi Babangida
+                                University, Lapai in chemistry and in any two of the following three subjects:
+                                Biology, Physics and Mathematics provided the candidate has credit in the third
+                                subject in school certificate Examination or equivalent.</p>
+                            <li style="list-style-type: disc;">Direct Entry into 200 level;</li>
+                            <p>This is for candidates with appropriate G.C.E 'A' level passes or equivalent who are
+                                deemed qualified to enter the university at the Year II level of the four-year
+                                Degree Programme. Such candidates must have possessed the G.C.E 'A' Level, HSC. IJMB
+                                or equivalent in two relevant Science subjects including Chemistry and at least GCE
+                                'O' Level or equivalent at credit level in Biology, Mathematics and Physics.</p>
+                        </ul>
+
+                    </p>
+
+                    </p>
+                </div>
+                <div id="content_8" class="tabcontent" style="display:none;">
+                    <H2>DEPARTMENT OF PHYSICS</h2>
+                    <p><strong>INTRODUCTION</strong><br>
+                        Physics Department is one of the pioneer Departments created in year 2006. The Department runs
+                        Physics degree programme leading to award of B.Sc Physics Degree.
+                        The Department started with 7 academic staff, one technical staff and 8 pioneer students under
+                        the Headship of Dr. BabaAlfa.
+                        The Department at inception started along with other Science Departments in a block of building
+                        with one laboratory and class rooms which it shared with others. Currently the Department is
+                        housed in a block of building with four 4 laboratories, 4 class rooms, 1 conference room and 12
+                        offices. One of the University cyber cafés with about 40 desktop computers is located within the
+                        building.
+                    </p>
+                    <p><strong>PHYSICS CURRICULUM</strong><br>
+                        Physics is a fundamental science, forming the basis of most of the technologies. Physics,
+                        originally called ‘Natural Philosophy’ includes the study of the whole nature. Today, Physics is
+                        described as the study of the properties of matter and energy. Traditional branches of Physics
+                        include: Mechanics, Properties of matter, Heat and Thermodynamics. Light, Sound, Electricity and
+                        Magnetism, Atomic and Molecular Physics, Geophysics, Atmospheric Physics, Environmental Physics,
+                        Climatology and Meteorology just to mention a few. New fields are emerging as science and
+                        technology develops. Today, Physics has assumed a greater importance than ever on account of its
+                        unprecedented advance in experimental techniques, its industrial applications and the influence
+                        of its ideas on contemporary thought.
+                        <br>
+                        The B.Sc. Physics curriculum is designed to impact competence in the fundamental aspects of the
+                        major branches of experimental and theoretical Physics. The understanding of the theoretical
+                        aspect requires competence in Mathematics relevant to the courses. These are either taught along
+                        with the Physics courses or are taken from Mathematics Department, if available. For the
+                        understanding of the experimental aspect of the curriculum, a number of suitably designed basic
+                        and advanced experiments are performed each semester. Other required courses are taken from
+                        Chemistry Department and General Studies Directorate. The B.Sc Physics is an eight (8) semester
+                        full time course, with Students Industrial Work Experience Scheme (SIWES) designed to give the
+                        student a broad understanding in a wide spectrum of knowledge embodied in the subject. At final
+                        year the student is expected to carry out theoretical or experimental research on a selected
+                        topic under the supervision of academic staff</p>
+
+                    <p><strong>PHILOSOPHY, GOALS AND OBJECTIVES</strong><br>
+                        <strong>PHILOSOPHY</strong><br>
+                        Physics as a discipline is involved in the objective investigation of the interactions of the
+                        forces of nature with matter. These investigations are basically empirical and experimental
+                        approach serves as confirmation of, or leads to new theoretical formulations in a mutually
+                        reciprocal relationship. This curriculum incorporates experimental and applied studies based on
+                        a sound theoretical background,
+                        <br>
+                        <strong>GOALS AND OBJECTIVES</strong><br>
+                        The goal of this curriculum is to produce graduates grounded in the basic theories of Physics,
+                        experimental techniques and theoretical applications. It is our goal to produce world class
+                        Physics graduates and prepare our graduates for careers in research and development, teaching or
+                        for entry into some specific technological professions. We therefore, aim at imparting an
+                        appreciation of current problems modern techniques and trends in Physics. The programme is
+                        therefore structured to:
+                        <ul style="list-style-type: disc">
+                            <li>Provide students with a broad and balanced foundation of physics knowlcdge and practical
+                                skills.</li>
+                            <li>Instill in students a sense of enthusiasm for physics, and appreciation of its
+                                applications in different contexts.</li>
+                            <li>Involve the students in intellectually simulation and satisf’ing experience of learning
+                                and studying.</li>
+                            <li>Develop in students the ability to apply their knowledge and skills in physics to the
+                                solution of theoretical and practical problems.</li>
+                            <li>Develop in students through an education in physics, a range of transferable skills of
+                                value in physics and other areas.</li>
+                            <li>Provide students with a knowledge and skills base for further studies in physics.
+                                engineering and other allied fields involving physics.</li>
+                        </ul>
+
+                    </p>
+
+                    <p><strong>ADMISSION AND GRADUATION REQUIREMENTS</strong>
+                        <br>
+                        <strong>UTME</strong><br>
+                        The entry requirements shall be at least credit level passes in five subjects including English
+                        Language, Mathematics, Chemistry and Physics to form the core subjects with credit in one
+                        Other relevant science subject from either Biology or Geography at the Senior Secondary School
+                        Certificate or its equivalent. In addition, an acceptable passes in the Unified Tertiary
+                        Institutions
+                        Matriculation Examination (UTME) into 100-level is required.
+                        <br>
+                        <strong>DIRECT ENTRY</strong><br>
+                        Candidates with two A level passes at the Advanced level (UMB, OND, NCE, or their equivalent) in
+                        oneS or more relevant subjects (Biology, Botany. Chemistry, Geography. Mathematics, Computer
+                        Sciences) and physics with at least upper credit or its equivalent may undertake the three-year
+                        degree programme from 200-level
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+      </div>
+      </div>
+    </section>
+
+    <section id="site-map">
+      <div class="container">
+        <div class="site-map-box">
+          <h3>Site Map</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+            <a href="departments.html" class="highlight">Departments</a>
+        </div>
+        <div class="site-map-box">
+          <h3>Our Team</h3>
+          <a href="#">Muhammad Abdullahi</a>
+          <a href="#">Muhammad Aliyu Aminu</a>
+          <a href="#">Abubakar Adamu</a>
+          <a href="team.html">More</a>
+        </div>
+        <div class="site-map-box">
+          <h3>Contact Us</h3>
+          <p><strong>Phone:</strong> +234 816162 6675</p>
+          <p><strong>Email:</strong> abdullmng@gmail.com</p>
+        </div>
+        <div class="site-map-box">
+          <h3>Social Media feeds</h3>
+          <p><strong>Facebook<i class="fas fa-facebook-square"></i>:</strong> No new Post</p>
+          <p><strong>Twitter<i class="fas fa-twitter-square"></i>:</strong> No new Post</p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &copy; 2019 IBB University Lapai</p>
+    </footer>
+    <div id="overlay">
+      <div class="spinner"></div>
+    </div>
+
+    <script type="text/javascript">
+  		var overlay = document.getElementById('overlay');
+  		window.addEventListener('load', function(){
+  			var $preloader = $('#overlay'),
+  			$spinner = $preloader.find('.spinner');
+  			$preloader.delay(500).fadeOut('slow');
+  		});
+  	</script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+  </body>
+</html>
