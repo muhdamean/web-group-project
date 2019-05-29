@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NASS | Messages</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/solid.css">
+  </head>
+<body>
+  <section id="sidemenu">
+    <nav>
+      <div class="admin-img"><img src="images/mng.jpeg"></div>
+      <h3 align="center">Admin <span class="online"></span></h3>
+      <p align="center">Online </p>
+      <hr>
+      <br>
+      <br>
+      <a href="dashboard.html"><span class="fa fa-home"></span> Dashboard</a>
+      <a href="messages.html" class="active"><span class="fa fa-envelope"></span> Messages <span class="msg">3</span> </a>
+      <a href="login.html"><span class="fa fa-sign-out-alt"></span> Logout</a>
+    </nav>
+  </section>
+  <section id="head">
+    <h1 style="float:left">NASS<span style="color:seagreen">IBBUL</span></h1>
+    <div class="user-area">
+      <a href="#" class="notification"><span class="fa fa-bell"></span><span class="circle">3</span></a>
+      <a href="login.html">Logout <span class="fa fa-sign-out-alt"></span></a>
+    </div>
+  </section>
+
+  <section id="content-area">
+    <div class="heading">
+      <h1><span class="fa fa-envelope"></span> Messages</h1>
+      <p>view unread messages here</p>
+    </div>
+
+    <div class="cards">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="message">
+            <h3><a href="read.html" style="text-decoration:none; color:mediumseagreen">abdullmng@gmail.com</a></h3>
+            <p>Please I need help, I Lost my NASS teller receipt and now my course form will...</p>
+          </div>
+          <div class="message">
+            <h3>abdullmng@gmail.com</h3>
+            <p>Please I need help, I Lost my NASS teller receipt and now my course form will...</p>
+          </div>
+          <div class="message">
+            <h3>abdullmng@gmail.com</h3>
+            <p>Please I need help, I Lost my NASS teller receipt and now my course form will...</p>
+          </div>
+          <div class="message">
+            <h3>abdullmng@gmail.com</h3>
+            <p>Please I need help, I Lost my NASS teller receipt and now my course form will...</p>
+          </div>
+          <div class="message">
+            <h3>abdullmng@gmail.com</h3>
+            <p>Please I need help, I Lost my NASS teller receipt and now my course form will...</p>
+          </div>
+          <div class="message">
+            <h3>abdullmng@gmail.com</h3>
+            <p>Please I need help, I Lost my NASS teller receipt and now my course form will...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <script type="text/javascript">
+    var overlay = document.getElementById('overlay');
+    window.addEventListener('load', function(){
+      var $preloader = $('#overlay'),
+      $spinner = $preloader.find('.spinner');
+      $preloader.delay(500).fadeOut('slow');
+    });
+  </script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+</body>
+</html>
