@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NASS | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/solid.css">
+  </head>
+  <body class="login-page">
+    <h1 align="center">Login</h1>
+    <div class="login-box">
+      <h3 align="center"><span class="fas fa-user-circle fa-3x"></span></h3>
+      <form>
+        <label for="">Username:</label>
+        <input type="text" name="username" value="Admin">
+        <label for="">Password:</label>
+        <input type="Password" name="password" value="admin">
+        <br>
+        <a href="dashboard.html" class="button">Login</a>
+        <p align="center"> <a href="#">Forgot Password?</a> </p>
+      </form>
+    </div>
+    <div id="overlay">
+      <div class="spinner"></div>
+    </div>
+
+    <script type="text/javascript">
+  		var overlay = document.getElementById('overlay');
+  		window.addEventListener('load', function(){
+  			var $preloader = $('#overlay'),
+  			$spinner = $preloader.find('.spinner');
+  			$preloader.delay(500).fadeOut('slow');
+  		});
+  	</script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+  </body>
+</html>
